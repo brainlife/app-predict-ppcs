@@ -1,8 +1,8 @@
 [![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
-[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.212-blue.svg)](https://doi.org/10.25663/brainlife.app.212)
+[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.64d62738e4d2e9108d7ab094-blue.svg)][![brainlife.io/app](https://img.shields.io/badge/brainlife.io-app-green.svg)](https://brainlife.io/app/64d62738e4d2e9108d7ab094)
 
 # app-predict-ppcs
-App to predict Persisting Post Concussion Symptoms
+App to predict Persisting Post Concussion Symptoms.
 
 ### Authors
 - [Giulia Bertò](giulia.berto.4@gmail.com)
@@ -23,10 +23,10 @@ We kindly ask that you cite the following articles when publishing papers and co
 
 ### Running the App
 ### On [Brainlife.io](http://brainlife.io/) 
-You can submit this App online at https://doi.org/10.25663/brainlife.app.212 via the “Execute” tab.
+You can submit this App online at https://brainlife.io/app/64d62738e4d2e9108d7ab094 via the “Execute” tab.
 
-Inputs: \
-The two inputs are (i) a collection of estimated masks and (ii) a collection of ground truth masks. If you have bundles in WMC format, you can convert them in the correct datatype by using this App: https://doi.org/10.25663/brainlife.app.142. WARNING: be sure that the two collections contain the exact same bundles, and that are in the same anatomical space.
+Input: \
+Tract Profiles.
 
 ### Running Locally (on your machine)
 
