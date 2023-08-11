@@ -1,5 +1,5 @@
 [![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
-[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.64d62738e4d2e9108d7ab094-blue.svg)][![brainlife.io/app](https://img.shields.io/badge/brainlife.io-app-green.svg)](https://brainlife.io/app/64d62738e4d2e9108d7ab094)
+[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.64d62738e4d2e9108d7ab094-blue.svg)](https://brainlife.io/app/64d62738e4d2e9108d7ab094)
 
 # app-predict-ppcs
 App to predict Persisting Post Concussion Symptoms.
