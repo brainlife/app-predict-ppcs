@@ -39,11 +39,9 @@ if __name__ == '__main__':
     df = pd.read_csv(args.profiles,index_col=0)
 
     print("Extracting only FA tract profiles...")
-    for t in range(len(tract_name_list)):
+    for t, tract_name in enumerate(tract_name_list):
         #select only the block related to the current tract
-        row_start = t*n_nodes
-        row_end = t*n_nodes + n_nodes
-        current_block = df.iloc[row_start:row_end]
+        current_block = df.loc[df['structureID']==tract_name]
         current_profile = current_block[metric]
         fa_profiles[t,:] = current_profile
 
