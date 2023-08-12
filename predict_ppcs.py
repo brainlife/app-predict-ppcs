@@ -63,7 +63,7 @@ if __name__ == '__main__':
         msg = 'This injury is at high risk of developing PPCS.'
         print("---> %s" %msg)
     
-    dict_json_product['brainlife'].append({'type': 'info', 'msg': '%s' %msg})
+    dict_json_product['brainlife'].append({'type': 'success', 'msg': '%s' %msg})
 
     # Save the dict_json_product in a json file
     with open('product.json', 'w') as outfile:
