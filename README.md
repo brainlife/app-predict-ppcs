@@ -1,5 +1,5 @@
 [![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
-[![Run on Brainlife.io](https://img.shields.io/badge/brainlife-app.793-blue.svg)](https://doi.org/10.25663/brainlife.app.793)
+[![Run on Brainlife.io](https://img.shields.io/badge/brainlife.io-app.793-blue.svg)](https://doi.org/10.25663/brainlife.app.793)
 
 # app-Clairevoy
 App to predict time to return to play (a.k.a., Persisting Post Concussion Symptoms).
