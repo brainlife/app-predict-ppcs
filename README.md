@@ -12,9 +12,9 @@ App to predict time to return to play (a.k.a., Persisting Post Concussion Sympto
 - [Nicholas Port](nport@iu.edu)
 
 ### Funding Acknowledgement
-brainlife.io is publicly funded and for the sustainability of the project, it is helpful to Acknowledge the use of the platform. Please acknowledge the funding below in your publications and code reusing this code.
+brainlife.io is publicly funded and for the sustainability of the project, it is helpful to Acknowledge the use of the platform. Please acknowledge the funding below in your publications, presentations, and code, that uses this code.
 
-[![DoD-W81XWH-2010717](https://img.shields.io/badge/NIH_NIBIB-R01EB029272-green.svg)](https://grantome.com/grant/NIH/R01-EB029272-01)
+[![DoD-W81XWH-2010717](https://img.shields.io/badge/DoD_W81XWH-2010717-blue.svg)](https://grantome.com/grant/DoD/W81XWH-2010717/)
 
 ### Citations
 We ask that you cite the following articles when publishing papers and code using this code. 
