@@ -19,7 +19,7 @@ brainlife.io is publicly funded and for the sustainability of the project, it is
 ### Citations
 We ask that you cite the following articles when publishing papers and code using this code. 
 
-Hayashi, Caron et al., brainlife.io: A decentralized and open source cloud platform to support neuroscience research Nature Methods, In Press.
+Hayashi, Caron, et al., brainlife.io: A decentralized and open source cloud platform to support neuroscience research *Nature Methods, In Press*.
 
 ### Running the App
 ### On [Brainlife.io](http://brainlife.io/) 
