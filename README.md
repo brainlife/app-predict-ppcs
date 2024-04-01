@@ -31,7 +31,7 @@ Tract Profiles.
 ### Running Locally (on your machine)
 
 1. git clone this repo.
-2. Inside the cloned directory, create `config.json` with something like the following content with paths to your input files.
+2. Inside the cloned directory, create `config.json` with something, like the following content with paths to your input files.
 
 ```json
 {
@@ -48,4 +48,4 @@ Tract Profiles.
 ### Dependencies
 This App only requires [singularity](https://sylabs.io/singularity/) to run. 
 
-#### MIT Copyright (c) 2023 brainlife.io The University of Texas at Austin.
+#### MIT Copyright (C) 2024 brainlife.io The University of Texas at Austin.
