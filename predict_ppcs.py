@@ -49,10 +49,12 @@ if __name__ == '__main__':
     mean_profile = np.mean(fa_profiles[:,10:90], axis=1)
 
     print("Loading precomputed weights...")
-    clf_LR_optimal = pickle.load(open('clf_LR_optimal', 'rb'))
+    #clf_LR_optimal = pickle.load(open('clf_LR_optimal', 'rb'))
+    clf_LR_16 = pickle.load(open('clf_LR_16', 'rb'))
 
     print("Predicting PPCS...")
-    y_pred = clf_LR_optimal.predict(mean_profile.reshape(1, -1))
+    #y_pred = clf_LR_optimal.predict(mean_profile.reshape(1, -1))
+    y_pred = clf_LR_16.predict(mean_profile.reshape(1, -1))
 
     if y_pred == 0:
         msg = 'This injury is at low risk of developing PPCS.'
