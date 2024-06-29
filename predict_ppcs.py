@@ -28,7 +28,10 @@ if __name__ == '__main__':
     # Generate a json.product to display messages on Brainlife UI
     dict_json_product = {'brainlife': []}
 
-    with open('tract_name_list.txt') as f:
+    #with open('tract_name_list.txt') as f:
+    #    tract_name_list = f.read().splitlines()
+
+    with open('significant_tracts.txt') as f:
         tract_name_list = f.read().splitlines()
 
     n_nodes = 100

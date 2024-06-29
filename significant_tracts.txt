@@ -1,0 +1,16 @@
+leftIFOF
+rightMDLFang
+anterioFrontalCC
+forcepsMinor
+rightpArc
+rightAslant
+lefttemporoThalamic
+rightILF
+leftILF
+leftUncinate
+leftMDLFang
+rightSLF1And2
+leftAslant
+rightMDLFspl
+leftMDLFspl
+rightTPC
