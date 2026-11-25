@@ -2,6 +2,26 @@
 [![Run on Brainlife.io](https://img.shields.io/badge/brainlife.io-app.793-blue.svg)](https://doi.org/10.25663/brainlife.app.793)
 
 # app-Clairevoy
+
+<!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
+
+**Predicts the risk of persisting post-concussion symptoms (PPCS) from mean FA tract profiles with a pretrained logistic regression classifier and reports low or high risk.**
+
+Takes the FA tract profiles, keeps the tracts listed in significant_tracts.txt, averages each profile, and applies a pretrained logistic regression model; the result (low or high risk of PPCS) is shown as a message on brainlife.io and no data are written. The model was trained for concussion data; results on other populations are not meaningful.
+
+Run it on brainlife.io: [https://doi.org/10.25663/brainlife.app.793](https://doi.org/10.25663/brainlife.app.793)
+
+| Input | Datatype | Required | Description |
+|---|---|---|---|
+| `0` | `neuro/tractmeasures` (profiles) | yes | Tract Profiles. Must include FA profiles for the tracts the classifier was trained on. |
+
+Runtime: container `brainlife/dipy:1.4.1`; 4 CPUs; 4 GB memory; 0.17 h walltime.
+
+Please cite:
+- Hayashi S, Caron BA, et al. brainlife.io: A decentralized and open source cloud platform to support neuroscience research. Nature Methods, in press.
+
+<!-- brainlife-app:end -->
+
 App to predict time to return to play (a.k.a., Persisting Post Concussion Symptoms).
 
 ### Authors
