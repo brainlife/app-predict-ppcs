@@ -10,7 +10,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-lightgrey.svg" alt="MIT license"></a>
 </p>
 
-## 🧠 At a glance
+## At a glance
 
 <!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
 
@@ -20,12 +20,12 @@ Takes the FA tract profiles, keeps the tracts listed in significant_tracts.txt, 
 
 | | |
 |---|---|
-| 📥 **Inputs** | `neuro/tractmeasures` |
-| 🐳 **Container** | `brainlife/dipy:1.4.1` |
-| ⚙️ **Resources** | 4 CPUs · 4 GB memory · 0.17 h walltime |
-| 🔗 **Run it** | [doi.org/10.25663/brainlife.app.793](https://doi.org/10.25663/brainlife.app.793) |
+| **Inputs** | `neuro/tractmeasures` |
+| **Container** | `brainlife/dipy:1.4.1` |
+| **Resources** | 4 CPUs · 4 GB memory · 0.17 h walltime |
+| **Run it** | [doi.org/10.25663/brainlife.app.793](https://doi.org/10.25663/brainlife.app.793) |
 
-#### 📥 Inputs
+#### Inputs
 
 | Input | Datatype | Required | Description |
 |---|---|---|---|
@@ -37,19 +37,19 @@ Takes the FA tract profiles, keeps the tracts listed in significant_tracts.txt, 
 
 Clairvoy predicts time to return to play after a concussion, framed as the risk of persisting post-concussion symptoms (PPCS). It averages the fractional anisotropy (FA) profiles of a set of white matter tracts and applies a pretrained logistic regression classifier. The model was trained on concussion data; its predictions are not meaningful for other populations. The approach is summarised in the poster [`poster_nns2023.pdf`](poster_nns2023.pdf).
 
-## 🚀 Running the App
+## Running the App
 
-### ☁️ On brainlife.io
+### On brainlife.io
 
 Open the App at [doi.org/10.25663/brainlife.app.793](https://doi.org/10.25663/brainlife.app.793), choose a `neuro/tractmeasures` dataset tagged `profiles` (tract profiles) and press **Execute**. The result, "This injury is at low risk of developing PPCS" or "This injury is at high risk of developing PPCS", is shown as a message on the results page. The App does not write any data to your project.
 
-### 🔬 How it works
+### How it works
 
 1. The FA profiles of the 16 tracts listed in [`significant_tracts.txt`](significant_tracts.txt) are read from the tract profiles table (column `fa`, matched on `structureID`).
 2. Each profile, which must have 100 nodes, is averaged over its central nodes (nodes 10–89).
 3. The pretrained classifier `clf_LR_16` (scikit-learn logistic regression) predicts low (0) or high (1) PPCS risk from the 16 mean FA values.
 
-### 💻 Locally
+### Locally
 
 You need [Singularity/Apptainer](https://apptainer.org/) and [`jq`](https://jqlang.github.io/jq/). The App runs in the `brainlife/dipy:1.4.1` container.
 
@@ -68,15 +68,15 @@ You need [Singularity/Apptainer](https://apptainer.org/) and [`jq`](https://jqla
    ./main
    ```
 
-## 📦 Outputs
+## Outputs
 
 The prediction is printed to the log and written to `product.json` as a brainlife.io message. No datasets are produced.
 
-## 🩺 Troubleshooting
+## Troubleshooting
 
 - **The App fails while extracting the FA profiles**: the tract profiles must contain an `fa` column, 100 nodes per tract, and every tract named in `significant_tracts.txt` (as `structureID`).
 
-## 📚 Citing
+## Citing
 
 > [!TIP]
 > If you use this App in your work, please cite the App, the software it builds on and brainlife.io (below). GitHub's **Cite this repository** button gives the App citation in APA and BibTeX.
@@ -87,13 +87,13 @@ The prediction is printed to the log and written to `product.json` as a brainlif
 - Hayashi S, Caron BA, Heinsfeld AS, et al. brainlife.io: a decentralized and open-source cloud platform to support neuroscience research. *Nature Methods* 21:809–813 (2024). [doi:10.1038/s41592-024-02237-2](https://doi.org/10.1038/s41592-024-02237-2)
 - Avesani P, McPherson B, Hayashi S, et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. *Scientific Data* 6:69 (2019). [doi:10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y)
 
-## 👥 Authors
+## Authors
 
 - [Giulia Bertò](https://github.com/giulia-berto)
 
 **Contributors:** Franco Pestilli (project director), Nicholas Port
 
-## 💰 Funding
+## Funding
 
 [![Wellcome-226486/Z/22/Z](https://img.shields.io/badge/Wellcome-226486%2FZ%2F22%2FZ-purple.svg)](https://wellcome.org/)
 [![NIH-NINDS-U24NS140384](https://img.shields.io/badge/NIH_NINDS-U24NS140384-green.svg)](https://reporter.nih.gov/project-details/11261037)
@@ -112,6 +112,6 @@ The prediction is printed to the log and written to `product.json` as a brainlif
 
 <sub>brainlife.io is publicly funded, and acknowledging that support helps keep it running. This App was developed with support from Wellcome, the U.S. National Institutes of Health (including the BRAIN Initiative BRAIN CONNECTS program: The Axonal Projectome EXchange, U24NS140384, and the Center for Mesoscale Connectomics, UM1NS132207) and the U.S. National Science Foundation.</sub>
 
-## ⚖️ License
+## License
 
 [MIT](LICENSE).
